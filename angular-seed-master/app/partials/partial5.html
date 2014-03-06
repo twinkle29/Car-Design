@@ -1,0 +1,47 @@
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+	var f=$("#f1");
+	f.submit(function(){
+		$("#submitB").attr("value","Submitted");
+		$("#submitB").attr("class","btn btn-success");
+		$("#fakeanchor").show();
+		$("#fakeanchor").attr("href", "#/otherDetails")
+	});
+});
+</script>
+
+
+<h1 id="secondHeading" style="margin-left:30px;"> Add New Car </h1>
+                  
+<div id="divider" style="margin-left:20px;width:500px;"></div>
+ <div style="margin-left:70px;margin-top:30px;">
+ <div><div style="width:25px;height:25px;background-color:#000059;float:left;display:inline-block;"></div><div style="float:left;display:inline-block;font-weight:bold;"><a href="#/forecast">--->Forecasting</a></div></div>
+ <br>
+ <br>
+ <div><div style="width:25px;height:25px;background-color:#000059;float:left;display:inline-block;"></div><div style="float:left;display:inline-block;font-weight:bold;"><a href="#/initialBlueprint">--->Initital Blueprint(Upload Image)</a></div></div>
+ <br>
+ <br>
+ <div><div style="width:25px;height:25px;background-color:#000059;float:left;display:inline-block;"></div><div style="float:left;display:inline-block;font-weight:bold;">--->Market Study(Upload File)</div></div>
+ <br>
+ <br>
+</div>
+<center><div id="formdiv">
+<form id="f1" ng-submit="addMarketStudy()">
+<table><tr><td>Market study:</td><td><textarea placeholder="Please comment on market study.." rows="9" cols="30" style="margin-top:30px;border:1px solid black;" ng-model="marketStudy" required/>
+ </td></tr>
+<br>
+<br>
+<br>
+</table>
+<br>
+<br>
+<table>
+<tr><td><input type="submit" class="btn btn-info" value="Submit" id="submitB"/></td><td> 
+<a id="fakeanchor" class="btn btn-primary" style="display:none;">Proceed to next phase..</a></td>
+</tr>
+</table>
+</form>
+	</div>
+</center>

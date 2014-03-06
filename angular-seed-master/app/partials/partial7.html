@@ -1,0 +1,13 @@
+
+<h1 id="secondHeading" style="margin-left:40px;"> User Reviews </h1>
+<div id="divider" style="margin-left:20px;width:500px;"></div>
+<div style="height:200px; margin-top:20px;">
+<ul>
+        <li ng-repeat="item in reviews  track by $index">
+        	<div id="reviewDiv">
+         <span><b>{{item.name}} :</b></span>
+         
+         <span><i>{{item.rev}}</i></span>
+     </div>
+        </li>
+      </ul>

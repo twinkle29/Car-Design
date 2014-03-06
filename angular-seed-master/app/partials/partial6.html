@@ -1,0 +1,83 @@
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+	var f=$("#f1");
+	f.submit(function(){
+		$("#submitB").attr("value","Submitted");
+		$("#submitB").attr("class","btn btn-success");
+		$("#fakeanchor").show();
+		$("#fakeanchor").attr("href", "#/myCars")
+	});
+});
+</script>
+
+
+<h1 id="secondHeading" style="margin-left:30px;"> Add New Car </h1>
+                  
+<div id="divider" style="margin-left:20px;width:500px;"></div>
+ <div style="margin-left:70px;margin-top:30px;">
+ <div><div style="width:25px;height:25px;background-color:#000059;float:left;display:inline-block;"></div><div style="float:left;display:inline-block;font-weight:bold;"><a href="#/forecast">--->Forecasting</a></div></div>
+ <br>
+ <br>
+ <div><div style="width:25px;height:25px;background-color:#000059;float:left;display:inline-block;"></div><div style="float:left;display:inline-block;font-weight:bold;"><a href="#/initialBlueprint">--->Initital Blueprint(Upload Image)</a></div></div>
+ <br>
+ <br>
+ <div><div style="width:25px;height:25px;background-color:#000059;float:left;display:inline-block;"></div><div style="float:left;display:inline-block;font-weight:bold;"><a href="#/marketStudy">--->Market Study(Upload File)</a></div></div>
+ <br>
+ <br>
+ <div><div style="width:25px;height:25px;background-color:#000059;float:left;display:inline-block;"></div><div style="float:left;display:inline-block;font-weight:bold;">--->Other Details</div></div>
+ <br>
+ <br>
+</div>
+<center><div id="formdiv" style="height:365px;">
+<form  id="f1" ng-submit="addOtherDetails()" name="f1">
+<table>	<tr><td>Project Name:</td><td> <input type="text" name="name" ng-model="projectName" ng-required="true" 
+	ng-maxlength=20 ng-minlength=5 /></td>
+	<td><div class="error" 
+        ng-show="f1.name.$dirty && f1.name.$invalid">
+    <small class="error" 
+        ng-show="f1.name.$error.required">
+       <div class="alert alert-warning">Project Name is required.</div>  
+    </small>
+    <small class="error" 
+            ng-show="f1.name.$error.minlength">
+          <div class="alert alert-warning">Field is required to be at least 3 characters</div>   
+    </small>
+    <small class="error" 
+            ng-show="f1.name.$error.maxlength">
+          <div class="alert alert-warning">Field cannot be longer than 20 characters</div>  
+    </small>
+  </div></td></tr>
+
+
+<tr><td>Project Manager:</td><td> <input type="text" ng-model="projectManager" name="manager" ng-required="true" ng-maxlength=20 ng-minlength=5 /></td><td><div class="error" 
+        ng-show="f1.manager.$dirty && f1.manager.$invalid">
+    <small class="error" 
+        ng-show="f1.manager.$error.required">
+       <div class="alert alert-warning">Project Manager is required.</div> 
+    </small>
+    <small class="error" 
+            ng-show="f1.manager.$error.minlength">
+           <div class="alert alert-warning">Field is required to be at least 3 characters</div> 
+    </small>
+    <small class="error" 
+            ng-show="f1.manager.$error.maxlength">
+           <div class="alert alert-warning">Field cannot be longer than 20 characters</div> 
+    </small>
+  </div></td></tr>
+<br>
+<br>
+<br>
+</table>
+<br>
+<br>
+<table>
+<tr><td><input type="submit" class="btn btn-info" value="Submit" id="submitB"/></td><td> 
+<a id="fakeanchor"  class="btn btn-primary" style="display:none;">Proceed to next phase..</a></td>
+</tr>
+</table>
+</form>
+
+	</div>
+</center>

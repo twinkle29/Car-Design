@@ -1,0 +1,223 @@
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+  content: "";
+  padding: 0;
+}
+.headert
+ {
+  width: 100%;
+ height:80px;
+  background-color: #000059;
+  padding-left: 20px;
+  color:#E6E6E6;
+  font-size: 3.8em;
+  font-weight: italic;
+  font-family: 'Comic Sans MS", cursive, sans-serif';
+ }
+ #footert
+ {
+  color:#E6E6E6;
+  text-align: center;
+  font-family: 'Comic Sans MS", cursive, sans-serif';
+
+ }
+ #redText
+ {
+  font-size: 0.80em;
+  color:#CCCC99;
+  font-family: 'Impact, Charcoal, sans-serif';
+  font-style: italic;
+
+ }
+ #secondHeading
+ {
+  font-style: bold;
+  font-family:'Comic Sans MS", cursive, sans-serif'; 
+  color:#000059;
+
+ }
+  #sideimage
+ {
+ height: 110px;
+  width: 230px;
+    border: 2px solid #CCCC99;
+  
+  
+ margin-left: 70px;
+ 
+ }
+ #thirdcolumn
+ {
+   margin-left: -50px;
+   width: 230px;
+   margin-top: 50px;
+ }
+ #contactimage
+ {
+  background-image:url('../images/glitter.jpg');
+   
+  width: 100%;
+  height: 700px;
+   color:#E6E6E6;
+  text-align: center;
+  font-family: 'Comic Sans MS", cursive, sans-serif';
+  font-size: 3.8em;
+  font-weight: italic;
+  padding-top: 300px;
+ }
+ #homethumb
+ {
+  margin-left: 20px;
+  
+  height: 550px;
+
+ }
+ #feedback
+ {
+  display:none;
+  margin-left: 15px;
+ }
+ #feedbackpanel
+ {
+  width:200px;
+  margin-top: 25px;
+  margin-left: 15px;
+ }
+ #secondside
+ {
+  
+  color:black;
+  font-weight: bold;
+   height: 320px;
+  width: 230px;
+  margin-top: 250px;
+  margin-left: 1030px;
+  border: 2px solid #CCCC99;  
+  padding: 5px 5px 5px 5px;
+ }
+ #thirdside
+ {
+  
+  
+  border: 2px solid #CCCC99;
+  font-weight: bold;
+   height: 150px;
+  width: 230px;
+  margin-top: 100px;
+  margin-left: 1030px;
+  
+  padding: 5px 5px 5px 5px;
+ }
+
+ #homeimage
+ {
+  height: 665px;
+  width: 750px;
+  
+
+
+ }
+#divider
+{
+  background-color: #CCCC99;
+height:20px;
+width:300px;
+margin-left: -20px;
+border-radius: 2em;
+
+}
+a{
+  
+  font-weight: bold;
+
+}
+#formdiv
+{
+color: #000059;
+/*background-color: #E6E6E6;*/
+text-align: left;
+border: 2px solid #CCCC99;
+font-size: 1.2em;
+ margin-top: 15px;
+ font-weight: bold;
+height: 270px;
+width: 600px;
+padding: 10px 20px 20px 20px;
+}
+#middleimage
+{
+  height: 350px;
+}
+/*#beneath
+{
+  background-color: #CCCC99;
+  height: 150px;
+  width: 617px;
+  margin-top: 50px;
+}*/
+#marq
+{
+  background-color: #CCCC99;
+  color:#000059;
+  margin-top: 50px;
+  
+  
+  height: 40px;
+  font-family: 'Impact, Charcoal, sans-serif';
+  font-style: italic;
+  padding: 10px 10px 10px 10px;
+  font-size: 1.5em;
+
+}
+
+input.ng-valid {
+  border: 2px solid #000059;
+}
+#reviewDiv
+{
+  width: 900px;
+  height:40px;
+  background-color: #000059;
+  color:#E6E6E6;
+   margin-top: 5px;
+   font-family: 'Impact, Charcoal, sans-serif';
+ border: 2px solid #CCCC99;
+  padding: 10px 10px 10px 10px;
+  font-size: 1.2em;
+}
+#carDiv
+{
+  height:40px;
+   background-color: #000059;
+  color:#E6E6E6;
+   margin-top: 5px;
+   font-family: 'Impact, Charcoal, sans-serif';
+  border: 2px solid #CCCC99;
+  padding: 10px 10px 10px 10px;
+  font-size: 1.2em;
+}

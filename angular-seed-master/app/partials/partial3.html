@@ -1,0 +1,59 @@
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+	var f=$("#f1");
+	f.submit(function(){
+		$("#submitB").attr("value","Submitted");
+		$("#submitB").attr("class","btn btn-success");
+		$("#fakeanchor").show();
+		$("#fakeanchor").attr("href", "#/initialBlueprint");
+	});
+});
+</script>
+
+
+<h1 id="secondHeading" style="margin-left:30px;"> Add New Car </h1>
+                  
+<div id="divider" style="margin-left:20px;width:500px;"></div>
+ <div style="margin-left:70px;margin-top:30px;">
+ <div><div style="width:25px;height:25px;background-color:#000059;float:left;display:inline-block;"></div><div style="float:left;display:inline-block;font-weight:bold;">--->Forecasting</div></div>
+ <br>
+ <br>
+</div>
+<center><div id="formdiv">
+<form id="f1" ng-submit="addForecast()">
+<table>	<tr><td>Please select a type:</td><td>     <select name="cars" ng-model="typeOfCar" required>
+	<option value="">Please select</option>
+<option value="Eco Friendly Car">Eco Friendly Car</option>
+<option value="Sports Car">Sports Car</option>
+<option value="High Powered Truck">High Powered Truck</option>
+<option value="Family Friendly Vehicle">Family Friendly Vehicle</option>
+</select></td></tr>
+
+
+	<tr><td>Please select no. of seats: </td><td>    <select name="seats" ng-model="noOfSeats" required>
+		<option value="">Please select</option>
+<option value="1 Seater">1 Seater</option>
+<option value="2 Seater">2 Seater</option>
+<option value="4 Seater">4 Seater</option>
+<option value="6 Seater">6 Seater</option>
+</select>
+</td></tr>
+
+<br>
+<br>
+<br>
+</table>
+<br>
+<br>
+<table>
+<tr><td><input type="submit" class="btn btn-info" value="Submit" id="submitB"/></td><td> 
+<a id="fakeanchor" class="btn btn-primary" style="display:none;">Proceed to next phase..</a></td>
+</tr>
+</table>
+</form>
+
+
+	</div>
+</center>
